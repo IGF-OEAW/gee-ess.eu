@@ -12,7 +12,8 @@
             margin: auto;
         }
 
-        @media screen and (max-width: 1370px) {
+        @media screen and (max-width: 1370px)
+        {
             .navbar-burger {
               display: block !important;
           }
@@ -30,7 +31,8 @@
         }
     }
 
-    @media screen and (min-width: 1371px) {
+    @media screen and (min-width: 1371px)
+    {
         .navbar-burger.is-active {
           display: none !important;
       }
@@ -49,6 +51,113 @@
     }
 }
 
+#header .logo{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: url(./GEE-ESS_24_black.svg) min( calc( 100% + 30px ), 50% + 690px ) bottom no-repeat;
+    background-size: auto min( 251px , 100% );
+    }
+
+#header {
+    position: relative;
+    background: url(./background.jpg) center center / cover no-repeat;
+}
+
+#header h1{
+    padding-right:calc( 210px - ( 100vw - 100% )/2 );
+    text-shadow: 0 0 10px black;
+}
+
+
+.hero.is-primary .navbar-menu{
+    background: transparent;
+}
+
+@media screen and (min-width: 1371px){
+    .navbar-item:last-child{
+    border-top-right-radius: 40px;
+}
+
+.navbar-item:first-child{
+    border-top-left-radius: 40px;
+}
+
+
+.navbar-item {
+    background: linear-gradient(0, #00000078 62%, transparent)
+}
+}
+
+@media screen and (max-width: 1370px){
+#header .logo{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: url(./GEE-ESS_24_black.svg) min( calc( 100%), 50% + 690px ) bottom no-repeat;
+    background-size: auto min( 251px , 100% );
+    }
+
+
+    #navbarBasicExample{
+        padding:0;
+    }
+
+.hero.is-primary a.navbar-item:hover{
+    background:linear-gradient(90deg, #00b89c 62%, transparent 80%)
+}
+
+.navbar-item {
+    background: linear-gradient(90deg, #00000078 62%, transparent 80%)
+}
+}
+
+.navbar-burger{
+    background: #00000078;
+    border-top-left-radius: 15px;
+}
+
+.navbar-burger:hover{
+    background: #000000cc;
+}
+
+@media screen and (max-width: 599px){
+    
+    
+
+    #header h1{
+        display:none
+    }
+
+
+    #header .logo{
+    width: 100%;
+    position: absolute;
+    height: 300px;
+    background: url(./GEE-ESS_24_black.svg) 50% 50% no-repeat;
+    }
+
+    #header .hero-body{
+        height: 250px;
+    }
+
+    #header {
+        position: relative;
+        background: url(./background.jpg) center center / cover no-repeat;
+        min-height: 300px;
+    }
+}
+
+.rotated-text {
+    transform: rotate(90deg);
+    width: 130px;
+    position: absolute;
+    top: 60px;
+    left: -56px;
+    font-size: 10px;
+    color: black;
+}
+
 
 </style>
 <script>
@@ -64,43 +173,41 @@
 </script>
 </head>
 <body>
-    <section class="hero is-primary">
+    <section id="header" class="hero is-primary">
+        <div class="rotated-text">Image from Iban Ameztoy</div>
+        <div class="logo"></div>
         <div class="hero-body">
             <div class="container is-max-desktop">
-                <h1 class="title">GEE-ESS'24: Google Earth Engine European Spring School 2024</h1>
+                <h1 class="title">GEE-ESS'24: Google&nbsp;Earth&nbsp;Engine European&nbsp;Spring&nbsp;School&nbsp;­&shy;2024</h1>
             </div>
         </div>
         <div class="hero-foot">
             <nav class="navbar" role="navigation" aria-label="main navigation">
               <div class="navbar-brand">
-                <a class="navbar-item" href="/">
-                  <img src="logo.png" alt="Logo">
-              </a>
+                  <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                      <span aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
+                  </a>
+              </div>
 
-              <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                  <span aria-hidden="true"></span>
-                  <span aria-hidden="true"></span>
-                  <span aria-hidden="true"></span>
-              </a>
+              <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start mx-auto" style="padding-right: min(180px, calc( -100vw + 1550px));">
+                  <a class="navbar-item" href="#welcome">Welcome</a>
+                  <a class="navbar-item" href="#program">Program</a>
+                  <a class="navbar-item" href="#cost">Cost</a>
+                  <a class="navbar-item" href="#where">Where?</a>
+                  <a class="navbar-item" href="#when">When?</a>
+                  <a class="navbar-item" href="#registration">Registration</a>
+                  <a class="navbar-item" href="#accommodation">Accommodation & Travel</a>
+                  <a class="navbar-item" href="#contact">Contact</a>
+                  <a class="navbar-item" href="#persuade">Persuade Your Boss/Student</a>
+                  <a class="navbar-item" href="#speakers">Speakers</a>
+                  <a class="navbar-item" href="#sponsors">Sponsors</a>
+              </div>
           </div>
-
-          <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-              <a class="navbar-item" href="#welcome">Welcome</a>
-              <a class="navbar-item" href="#program">Program</a>
-              <a class="navbar-item" href="#cost">Cost</a>
-              <a class="navbar-item" href="#where">Where?</a>
-              <a class="navbar-item" href="#when">When?</a>
-              <a class="navbar-item" href="#registration">Registration</a>
-              <a class="navbar-item" href="#accommodation">Accommodation & Travel</a>
-              <a class="navbar-item" href="#contact">Contact</a>
-              <a class="navbar-item" href="#persuade">Persuade Your Boss/Student</a>
-              <a class="navbar-item" href="#speakers">Speakers</a>
-              <a class="navbar-item" href="#sponsors">Sponsors</a>
-          </div>
-      </div>
-  </nav>
-</div>
+      </nav>
+  </div>
 
 </section>
 <section id="welcome" class="section py-4">
@@ -187,7 +294,7 @@
         <!-- Google Map Embed -->
         <div class="columns">
             <div class="column">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.7592115900566!2d16.335790822118177!3d48.23626958944208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d062f2184b15b%3A0xe201fd9641d07133!2sUniversit%C3%A4t%20f%C3%BCr%20Bodenkultur.%20Vienne!5e0!3m2!1sfr!2sat!4v1692648422539!5m2!1sfr!2sat" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.7592115900566!2d16.335790822118177!3d48.23626958944208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d062f2184b15b%3A0xe201fd9641d07133!2sUniversit%C3%A4t%20f%C3%BCr%20Bodenkultur.%20Vienne!5e0!3m2!1sfr!2sat!4v1692648422539!5m2!1sfr!2sat"  height="450" style="border:0; max-width:600px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <a href="https://boku.ac.at/fileadmin/data/H05000/H17300/Orientierung_und_Lagepl%C3%A4ne/Standortplan_Tuerkenschanze.pdf">Printable map</a>
                 <br>
                 <a href="https://navi.boku.ac.at/?centerx=1818281.0806230458&centery=6146379.925234005&zlevel=18&floor=0">Interactive map</a>
@@ -222,7 +329,7 @@
 <section id="registration" class="section py-4">
     <div class="container is-max-desktop has-text-justified">
         <h2 class="title">Registration</h2>
-        <p>Join us for an enriching experience at GEE-ESS'24. We expect around 40 participants, so register now to secure your spot on a <u>first come, first served basis!</u></p>
+        <p>Join us for an enriching experience at GEE-ESS'24. We expect around 40 participants, so register as soon as posible to secure your spot.</p>
         <a href="#" class="button is-primary" disabled>Register Now</a>
         <p>Registration will open soon. Stay tuned for updates!</p>
     </div>
