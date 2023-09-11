@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <title>GEE-ESS'24</title>
+    <style>
+        .sponsor-logo img {
+            max-width: 100px; /* Adjust the width as needed */
+            height: auto;
+            margin: auto;
+        }
+
+        @media screen and (max-width: 1370px) {
+            .navbar-burger {
+              display: block !important;
+          }
+          .navbar-menu:not(.is-active) {
+              display: none !important;
+          }
+          .navbar-start {
+            justify-content: revert;
+            margin-right: revert;
+        }
+
+        .navbar, .navbar-end, .navbar-menu, .navbar-start {
+            align-items: revert;
+            display: revert;
+        }
+    }
+
+    @media screen and (min-width: 1371px) {
+        .navbar-burger.is-active {
+          display: none !important;
+      }
+      .navbar-menu.is-active {
+          display: flex !important;
+      }
+
+      .navbar-start {
+        justify-content: flex-start;
+        margin-right: auto;
+    }
+
+    .navbar, .navbar-end, .navbar-menu, .navbar-start {
+        align-items: stretch;
+        display: flex;
+    }
+}
+
+
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.querySelector('.burger');
+      const menu = document.querySelector('.navbar-menu');
+
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+    });
+  });
+</script>
+</head>
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h1 class="title">GEE-ESS'24: Google Earth Engine European Spring School 2024</h1>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+              <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                  <img src="logo.png" alt="Logo">
+              </a>
+
+              <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+              </a>
+          </div>
+
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="#welcome">Welcome</a>
+              <a class="navbar-item" href="#program">Program</a>
+              <a class="navbar-item" href="#cost">Cost</a>
+              <a class="navbar-item" href="#where">Where?</a>
+              <a class="navbar-item" href="#when">When?</a>
+              <a class="navbar-item" href="#registration">Registration</a>
+              <a class="navbar-item" href="#accommodation">Accommodation & Travel</a>
+              <a class="navbar-item" href="#contact">Contact</a>
+              <a class="navbar-item" href="#persuade">Persuade Your Boss/Student</a>
+              <a class="navbar-item" href="#speakers">Speakers</a>
+              <a class="navbar-item" href="#sponsors">Sponsors</a>
+          </div>
+      </div>
+  </nav>
+</div>
+
+</section>
+<section id="welcome" class="section py-4">
+    <div class="container is-max-desktop">
+        <h2 class="title">Welcome to GEE-ESS'24</h2>
+        <p>Welcome to GEE-ESS'24, the premier European Spring School dedicated to the exploration and mastery of the Google Earth Engine. Hosted at the BOKU Türkenschanze campus in Vienna, this program promises an enriching experience from the 2nd to the 5th of April, strategically positioned the week after Easter and two weeks before EGU, aiming to optimize travel for attendees.</p>
+        <p>This initiative is a collaborative effort led by the ÖAW (Austrian Academy of Sciences) and BOKU (University of Natural Resources and Life Sciences, Vienna), in partnership with the University of Valencia. Lead by Google Earth Engine Developer Experts, we aim to provide participants with:</p>
+        <ul>
+            <li>Comprehensive insights into the functionalities and capabilities of the Google Earth Engine.</li>
+            <li>Hands-on sessions, workshops, and collaborative projects to harness the power of geospatial data.</li>
+            <li>Opportunities to learn from Google Developer and leading experts in the field and to network with fellow enthusiasts, researchers, and professionals.</li>
+        </ul>
+    </div>
+</section>
+<section id="program" class="section py-4">
+    <div class="container is-max-desktop">
+        <h2 class="title">Program Structure</h2>
+        <p><b>Days 1 & 2</b>: Lectures and hands-on sessions, providing participants with foundational knowledge and practical skills in Google Earth Engine.</p>
+        <p><b>Days 3 & 4 (Morning)</b>: Group projects, where participants will collaborate to apply their knowledge and tackle real-world challenges using Google Earth Engine.</p>
+        <p><b>Day 4 (Afternoon)</b>: Group presentations, focusing on the approach, technical challenges, and solutions rather than the content of the projects.</p>
+    </div>
+    <div class="container is-max-desktop">
+        <h2 class="title">Preliminary Program</h2>
+        <h3>Prerequisites</h3>
+        <p>Participants are expected to have knowledge of at least one programming language (does not need to be the same as Google Earth Engine). Familiarity with remote sensing concepts and a minimum level of knowledge in the field are also required.</p>
+        <div class="content">
+            <h3 class="mb-1 mt-4">Basics</h3>
+            <ul class="my-0">
+                <li>Introduction to Google Earth Engine (GEE)</li>
+                <li>Understanding Geospatial Data</li>
+                <li>Working with Satellite Imagery</li>
+            </ul>
+            <h3 class="mb-1 mt-4">Time-Series Analysis</h3>
+            <ul class="my-0">
+                <li>Analyzing Temporal Patterns</li>
+                <li>Change Detection Techniques</li>
+                <li>Seasonal Trend Analysis</li>
+            </ul>
+            <h3 class="mb-1 mt-4">Machine Learning (ML)</h3>
+            <ul class="my-0">
+                <li>Image Classification</li>
+                <li>Biophysical Parameter Retrieval</li>
+                <li>Clustering Techniques</li>
+            </ul>
+            <h3 class="mb-1 mt-4">Planetary Scale Analysis</h3>
+            <ul class="my-0">
+                <li>Large-Scale Data Processing</li>
+                <li>Global Environmental Monitoring</li>
+                <li>Scalable Algorithms in GEE</li>
+            </ul>
+            <h3 class="mb-1 mt-4" style="color:red">ML / Vertex (If Google Pays for It)</h3>
+            <ul class="my-0">
+                <li>Advanced Machine Learning Models</li>
+                <li>Vertex AI Integration with GEE</li>
+                <li style="color:red" >Real-World Applications</li>
+            </ul>
+            <h3 class="mb-1 mt-4">Export / Optimization</h3>
+            <ul class="my-0">
+                <li>Data Export Techniques</li>
+                <li>Performance Optimization in GEE</li>
+                <li>Best Practices for Scalable Solutions</li>
+            </ul>
+            <h3 class="mb-1 mt-4">App Development</h3>
+            <ul class="my-0">
+                <li>Building Custom GEE Apps</li>
+                <li>User Interface Design</li>
+                <li>Deploying and Sharing Apps</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="cost" class="section py-4">
+    <div class="container is-max-desktop">
+        <h2 class="title">Cost</h2>
+        <p>Students (including PhD students): TBA</p>
+        <p>Other participants: TBA</p>
+    </div>
+</section>
+<section id="where" class="section py-4">
+    <div class="container is-max-desktop">
+        <h2 class="title">Where?</h2>
+        <p>Hosted at the BOKU Türkenschanze campus in Vienna.</p>
+
+        <!-- Google Map Embed -->
+        <div class="columns">
+            <div class="column">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.7592115900566!2d16.335790822118177!3d48.23626958944208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d062f2184b15b%3A0xe201fd9641d07133!2sUniversit%C3%A4t%20f%C3%BCr%20Bodenkultur.%20Vienne!5e0!3m2!1sfr!2sat!4v1692648422539!5m2!1sfr!2sat" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a href="https://boku.ac.at/fileadmin/data/H05000/H17300/Orientierung_und_Lagepl%C3%A4ne/Standortplan_Tuerkenschanze.pdf">Printable map</a>
+                <br>
+                <a href="https://navi.boku.ac.at/?centerx=1818281.0806230458&centery=6146379.925234005&zlevel=18&floor=0">Interactive map</a>
+            </div>
+            <div class="column">
+                <!-- Images of the Area -->
+                <figure class="image">
+                    <img src="https://www.wur.nl/upload_mm/1/a/5/2c838647-8a79-475d-b4ba-53f4d1c8d4b0_BOKU%20internet%20picture%201.jpg" alt="Boku">
+                </figure>
+                <figure class="image">
+                    <img src="https://www.wur.nl/upload_mm/b/5/1/d3c93d67-5567-4b1b-9fb5-eaf1ed6217f1_BOKU%20internet%20picture%202.jpg" alt="Boku">
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="when" class="section py-4">
+    <div class="container is-max-desktop">
+        <h2 class="title">When?</h2>
+        <p>The Google Earth Engine European Spring School 2024 will take place from the <b>2nd to the 5th of April 2004</b>.</p>
+        <br>
+        <ul>
+            <li><strong>Wed, 15 November 2023:</strong> Registration opens</li>
+            <li><strong>Fri, 15 December 2023:</strong> Registration deadline</li>
+            <li><strong>Mon, 5 January 2024:</strong> Notification of acceptance</li>
+            <li><strong>Tue, 2 April to Fri, 5 April 2024:</strong> GEE-ESS'24 takes place</li>
+        </ul>
+        <a href="GEE-ESS24.ics" download="GEE-ESS-2024.ics">Download Calendar Event</a>
+    </div>
+</section>
+
+<section id="registration" class="section py-4">
+    <div class="container is-max-desktop">
+        <h2 class="title">Registration</h2>
+        <p>Join us for an enriching experience at GEE-ESS'24. We expect around 40 participants, so register now to secure your spot on a <u>first come, first served basis!</u></p>
+        <a href="#" class="button is-primary" disabled>Register Now</a>
+        <p>Registration will open soon. Stay tuned for updates!</p>
+    </div>
+</section>
+
+<section id="accommodation" class="section py-4">
+    <div class="container is-max-desktop">
+        <h2 class="title">Accommodation & Travel</h2>
+        <p>Please note that we have not arranged any specific accommodations for the event, and participants are responsible for their own lodging arrangements. Vienna offers a wide range of hotels to suit all budgets.</p>
+        <p>For those participating in EGU, it may be more cost-effective to stay in Vienna for the extra week. We have prioritized offering this spring school at a reduced rate rather than incurring the additional expense of renting a more exclusive venue.</p>
+        <p>Traveling to Vienna is convenient, as the city is well connected by both train and airplane. Major train stations and the international airport provide easy access to the city from various locations.</p>
+        <p>We appreciate your understanding and look forward to welcoming you to Vienna!</p>
+    </div>
+</section>
+
+<section id="contact" class="section py-4">
+    <div class="container is-max-desktop">
+        <h2 class="title">Contact Us</h2>
+        <p>If you have any questions or need assistance, please don't hesitate to reach out:</p>
+        <ul>
+            <li>Email: <a href="mailto:gee-ess@oeaw.ac.at">gee-ess@oeaw.ac.at</a></li>
+        </ul>
+    </div>
+</section>
+
+<section id="persuade" class="section py-4">
+    <div class="container is-max-desktop">
+        <h2 class="title">Persuade Your Boss/Student</h2>
+        <p>Need to convince your supervisor or student to attend GEE-ESS'24? Here are some compelling arguments for both sides:</p>
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <th>For Students to Convince Supervisors</th>
+                    <th>For Supervisors to Convince Students</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Properly learning GEE will save hours later. Only improving efficiency by 5% over 3 years will completely pay off the investment.</td>
+                    <td>This is a unique opportunity to gain hands-on experience with GEE, a valuable skill in today's research landscape.</td>
+                </tr>
+                <tr>
+                    <td>The event is economically priced, offering high value for the investment.</td>
+                    <td>Participation in this event will enhance your academic profile and open doors to new opportunities in the field.</td>
+                </tr>
+                <tr>
+                    <td>Networking opportunities may lead to collaborations and connections in the field.</td>
+                    <td>Encourage students to expand their network and foster potential research collaborations.</td>
+                </tr>
+                <tr>
+                    <td>Strategically positioned two weeks before EGU, reducing travel costs.</td>
+                    <td>Aligning with EGU schedule maximizes travel efficiency, minimizes costs, and provides time to visit Vienna.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+<section id="speakers" class="section py-4">
+    <div class="container is-max-desktop">
+        <h2 class="title">Speakers</h2>
+        <div class="columns">
+            <div class="column">
+                <figure class="image">
+                    <img src="https://boku.ac.at/index.php?eID=boku_external_data_bokuonline_image&nr_obfuscated=1FF2F8B875B83E5C" alt="Emma Izquierdo-Verdiguier">
+                </figure>
+                <h3 class="title is-5">Emma Izquierdo-Verdiguier</h3>
+                <p>BOKU (University of Natural Resources and Life Sciences, Vienna)</p>
+                <br>
+                <p>My research interests are the use of Earth Observation data and cloud computing environment for land surface phenology. My previous research focused on machine learning applied to remote sensing data. In particular, nonlinear feature extraction based on kernel methods and on automatic object identification and classification using multispectral images.</p>
+            </div>
+            <div class="column">
+                <figure class="image">
+                    <img src="https://www.mgravey.com/assets/img/MathieuGravey_current.png" alt="Mathieu Gravey">
+                </figure>
+                <h3 class="title is-5">Mathieu Gravey</h3>
+                <p>Junior Group Leader at IGF-ÖAW (Institute For Interdisciplinary Mountain Research - Austrian Academy of Sciences)</p>
+                <br>
+                <p style="">I specialized in geostatistics, remote sensing, and machine learning. My current research includes developing novel passive sensing technology and collaborating on various subjects such as vegetation evolution, growing season analysis, and bird tracking. I am is dedicated to cutting-edge solutions and community engagement through open and accessible software.</p>
+            </div>
+            <div class="column">
+                <figure class="image">
+                    <img src="Alvaro_face.png" alt="Álvaro Moreno Martínez">
+                </figure>
+                <h3 class="title is-5">Álvaro Moreno Martínez</h3>
+                <p>Senior Post Doctoral researcher at the University of Valencia</p>
+                <br>
+                <p>My research has been mainly focused on remote sensing applications in vegetation. I have been actively involved in the development of physical and statistical models and the implementation of operational methodologies for the study of vegetation cover through satellite imagery at different spatial/temporal scales.</p>
+            </div>
+            <!-- Repeat for other speakers -->
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section id="sponsors" class="section py-4">
+    <div class="container is-max-desktop">
+        <h2 class="title">Sponsors</h2>
+        <!-- <p></p> -->
+        <div class="columns is-vcentered is-centered">
+            <div class="column has-text-centered">
+                <a href="https://www.oeaw.ac.at/en/" target="_blank" class="sponsor-logo">
+                    <img src="https://www.oeaw.ac.at/typo3conf/ext/oeaw_redesign/Resources/Public/Icons/logo-kurz.png" alt="ÖAW (Austrian Academy of Sciences)">
+                </a>
+                <p>ÖAW (Austrian Academy of Sciences)</p>
+            </div>
+            <div class="column has-text-centered">
+                <a href="https://boku.ac.at/en/" target="_blank" class="sponsor-logo">
+                    <img src="https://boku.ac.at/typo3conf/ext/boku_template/Resources/Public/Images/boku-logo-176-orig.svg" alt="BOKU (University of Natural Resources and Life Sciences, Vienna)">
+                </a>
+                <p>BOKU (University of Natural Resources and Life Sciences, Vienna)</p>
+            </div>
+            <div class="column has-text-centered">
+                <a href="https://www.uv.es/uvweb/college/en/university-valencia-1285845048380.html" target="_blank" class="sponsor-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Seal_of_the_University_of_Valencia.svg/1200px-Seal_of_the_University_of_Valencia.svg.png" alt="University of Valencia">
+                </a>
+                <p>University of Valencia</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            GEE-ESS'24 &copy; 2023. Organized by ÖAW, BOKU, and the University of Valencia.
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

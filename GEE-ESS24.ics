@@ -1,0 +1,10 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+DTSTART:20240402T090000
+DTEND:20240405T170000
+LOCATION:BOKU Türkenschanze campus, Vienna
+SUMMARY:Google Earth Engine European Spring School 2024
+DESCRIPTION:Join us for the Google Earth Engine European Spring School 2024 from the 2nd to the 5th of April.
+END:VEVENT
+END:VCALENDAR
